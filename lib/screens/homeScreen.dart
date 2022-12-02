@@ -1,3 +1,4 @@
+import 'package:b_bank/screens/donor_registraion.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -31,6 +32,8 @@ class _Home_ScreenState extends State<Home_Screen> {
               ),
             ),
           ),
+          ////////////////////////////////////////////
+
           Expanded(
             child: GridView.count(
               primary: false,
@@ -40,31 +43,37 @@ class _Home_ScreenState extends State<Home_Screen> {
               crossAxisCount: 2,
               children: <Widget>[
                 // donor registraion container
-                Container(
-                  child: Card(
-                    elevation: 10,
-                    shadowColor: Colors.redAccent,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Icon(
-                          Icons.person,
-                          size: 50,
-                          color: Colors.black45,
-                        ),
-                        Text(
-                          "Donor Registration",
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.ubuntu(
-                            fontSize: 22,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black54,
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => donor_registration()));
+                  },
+                  child: Container(
+                    child: Card(
+                      elevation: 10,
+                      shadowColor: Colors.redAccent,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            size: 50,
+                            color: Colors.black45,
                           ),
-                        ),
-                      ],
+                          Text(
+                            "Donor Registration",
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.ubuntu(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black54,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
