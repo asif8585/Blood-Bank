@@ -22,7 +22,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(25),
                   bottomRight: Radius.circular(25)),
-              color: Colors.redAccent,
+              color: Colors.redAccent[200],
             ),
             child: Center(
               child: Text(
