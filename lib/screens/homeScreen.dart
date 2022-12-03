@@ -1,6 +1,6 @@
 import 'package:b_bank/screens/donor_registraion.dart';
-import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home_Screen extends StatefulWidget {
@@ -20,29 +20,56 @@ class _Home_ScreenState extends State<Home_Screen> {
           children: [
             // blood bank text heading container
 
-            Container(
-              width: MediaQuery.of(context).size.width * 1,
-              height: MediaQuery.of(context).size.width * 0.41,
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.only(
-                    bottomRight: Radius.elliptical(590, 200),
-                    bottomLeft: Radius.elliptical(290, 190)),
-                color: Colors.redAccent,
-              ),
-              child: Column(
-                children: [
-                  Text(
-                    "Blood Bank",
-                    style:
-                        GoogleFonts.oswald(fontSize: 59, color: Colors.white),
+            Stack(
+              children: [
+                ClipPath(
+                  clipper: OvalBottomBorderClipper(),
+                  child: Container(
+                    color: Color.fromARGB(255, 255, 222, 219),
+                    height: MediaQuery.of(context).size.height * 0.225,
                   ),
-                  Text(
-                    " ID DATA INFO SYSTEM",
-                    style: GoogleFonts.aclonica(
-                        color: Colors.white70, fontSize: 17),
-                  )
-                ],
-              ),
+                ),
+                ClipPath(
+                  clipper: WaveClipperTwo(),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 1,
+                    height: MediaQuery.of(context).size.width * 0.41,
+                    decoration: BoxDecoration(
+                      color: Colors.redAccent,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width * 0.28,
+                              child: Text("Blood",
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.oswald(
+                                      fontSize: 45, color: Colors.redAccent)),
+                              color: Colors.white,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 6),
+                              child: Text(
+                                "Bank",
+                                style: GoogleFonts.oswald(
+                                    fontSize: 59, color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          " ID DATA INFO SYSTEM",
+                          style: GoogleFonts.aclonica(
+                              color: Colors.white70, fontSize: 17),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
             ////////////////////////////////////////////
 
