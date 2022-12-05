@@ -53,9 +53,10 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.person_outline,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/user.png",
+                      height: 19,
+                      color: Colors.redAccent,
                     ),
                   ),
                   Expanded(
@@ -78,9 +79,10 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.person_outline,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/guardian.png",
+                      color: Colors.redAccent,
+                      height: 22,
                     ),
                   ),
                   Expanded(
@@ -103,9 +105,9 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.person_outline,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/woman.png",
+                      color: Colors.redAccent,
                     ),
                   ),
                   Expanded(
@@ -128,9 +130,9 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.phone_android_outlined,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/smartphone.png",
+                      color: Colors.redAccent,
                     ),
                   ),
                   Expanded(
@@ -155,9 +157,9 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.mail_outlined,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/email.png",
+                      color: Colors.redAccent,
                     ),
                   ),
                   Expanded(
@@ -180,9 +182,10 @@ class _donor_registrationState extends State<donor_registration> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12, left: 16),
-                    child: Icon(
-                      Icons.location_on_outlined,
-                      size: 28,
+                    child: Image.asset(
+                      "assets/img/address.png",
+                      height: 20,
+                      color: Colors.redAccent,
                     ),
                   ),
                   Expanded(
