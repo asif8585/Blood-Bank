@@ -43,12 +43,15 @@ class _Home_ScreenState extends State<Home_Screen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
+                              decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15)),
+                                  color: Colors.white),
                               width: MediaQuery.of(context).size.width * 0.28,
                               child: Text("Blood",
                                   textAlign: TextAlign.center,
                                   style: GoogleFonts.oswald(
                                       fontSize: 45, color: Colors.redAccent)),
-                              color: Colors.white,
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 6),
