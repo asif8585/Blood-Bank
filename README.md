@@ -4,13 +4,19 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+This is a blood bank app developed using flutter.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Onboarding Ui
+![onboard photo](https://user-images.githubusercontent.com/82216559/205877949-bd2bb144-711c-458e-8359-b2ce41b03ac8.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+# HomePage
+![home_bloodbank](https://user-images.githubusercontent.com/82216559/205879292-94d1bb2c-31cb-47f6-9eb4-e3202da63f7c.png)
+
+# Donor registartion page
+
+![donor page bloodbank](https://user-images.githubusercontent.com/82216559/205879495-8d6c19e0-ea62-4d65-8985-6de0607c5042.png)
+
+
